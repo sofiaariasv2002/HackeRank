@@ -12,6 +12,13 @@ def matchingStrings(stringList, queries):
         result.append(cont)
     return result
 
+# def matchingStrings(stringList, queries):
+#    result = []
+#    for query in queries:
+#        result.append(stringList.count(query))
+#    return result
+
+
 if __name__ == '__main__':
     stringList=['ab', 'ab', 'abc']
     queries=['ab', 'abc','bc']
