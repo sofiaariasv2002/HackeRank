@@ -17,17 +17,34 @@ def sherlockAndAnagrams(s):
     # obtener substring
     for i in range(n):
         for j in range(i + 1, n + 1):
-            substring.append(s[i:j])
-    
+            substring.append(s[i:j])  
+    print(substring)
 
-# Ordenar cada subcadena
+    # Ordenar cada subcadena
     for i in range(len(substring)):
-        sorted_chars = sorted(substring[i])  # Ordenamos los caracteres
-        substring[i] = ''.join(sorted_chars)  # Reconstruimos la cadena ordenada
+        sorted_chars = sorted(substring[i])  
+        substring[i] = ''.join(sorted_chars) 
+    print(substring)
 
-    return substring
+    # Crear diccionario
+    for subs in substring:
+        if subs not in substringDir:
+            substringDir[subs]=1
+        else:
+            substringDir[subs]=substringDir[subs]+1
+    print(substringDir)
+
+    # Contar pares de anagramas
+    cant = 0  
+    for value in substringDir.values():  # Iteramos sobre los valores en el diccionario
+        if value > 1:  # Solo calculamos pares si el valor es mayor que 1
+            pairs = (value * (value - 1)) // 2  # Calculamos el número de pares
+            cant += pairs  # Sumamos al total de pares
+    return cant
+
+
 
 
 if __name__ == '__main__':
-    s="abba"
+    s="kkkk"
     print(sherlockAndAnagrams(s))
