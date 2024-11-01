@@ -25,3 +25,4 @@ if __name__ == '__main__':
     #result=[2,1,0]
 
     print(matchingStrings(stringList, queries))
+
