@@ -6,7 +6,8 @@
 
 ##################################################################################################################
 # In an array, arr, the elements at indices i and i (where i<j) form an inversion if arr[i] > arr[j]. 
-# In other words, inverted elements arr[i] and arr[j] are considered to be "out of order". To correct an inversion, we can swap adjacent elements.
+# In other words, inverted elements arr[i] and arr[j] are considered to be "out of order". To correct an inversion, 
+# we can swap adjacent elements.
 ##################################################################################################################
 
 N_swaps = 0
