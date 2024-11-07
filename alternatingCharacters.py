@@ -5,9 +5,11 @@
 ##################################################################################################################
 
 ##################################################################################################################
-# Sherlock considers a string to be valid if all characters of the string appear the same number of times. 
-# It is also valid if he can remove just 1 character at 1 index in the string, and the remaining characters will 
-# occur the same number of times. Given a string s, determine if it is valid. If so, return YES, otherwise return NO.
+# A Shashank le gustan las cadenas donde los caracteres consecutivos son diferentes. 
+# Por ejemplo, le gusta ABABA, mientras que ABAA no le gusta. Dada una cadena que solamente contiene 
+# caracteres A y B, él quiere cambiarla a una cadena que le guste. 
+# Para hacerlo, solo se le permite borrar los caracteres en la cadena.
+# Tu tarea es encontrar la mínima cantidad requerida de borrados.
 ##################################################################################################################
 
 def alternatingCharacters(s):
