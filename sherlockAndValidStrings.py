@@ -41,5 +41,5 @@ if __name__ == '__main__':
     #s='abcdefghhgfedecba' #yes
     #s='abccc' #no
     #s='abcc' #yes
-    #s='aabbcd' #no
+    s='aabbcd' #no
     print(isValid(s))

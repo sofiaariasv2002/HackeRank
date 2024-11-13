@@ -46,5 +46,5 @@ def sherlockAndAnagrams(s):
 
 
 if __name__ == '__main__':
-    s="kkkk"
+    s="hola"
     print(sherlockAndAnagrams(s))
